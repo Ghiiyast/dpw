@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo-class Selector</title>
+    <style>
+        p {
+            display: none; 
+            background-color: darkgray;
+            padding: 20px;
+        }
+       
+        div:hover p {
+            display: block;
+        }
+     
+        a:hover {
+            color: orange;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Letakkan kursor disini untuk melihat div element 
+        <p>Saya adalah element p yang muncul saat hover!</p>
+    </div>
+    <br>
+    <a href="#">Contoh Link Hover</a>
+</body>
+</html>
