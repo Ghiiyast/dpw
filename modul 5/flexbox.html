@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Flex Box</title>
+    <style>
+        .wadah_flex {
+            display: flex;
+            flex-direction: row; 
+            flex-wrap: wrap; 
+            justify-content: space-around; 
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+        .wadah_flex > div {
+            background-color: #2196F3;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div><div>2</div><div>3</div><div>4</div>
+        <div>5</div><div>6</div><div>7</div><div>8</div>
+        <div>9</div><div>10</div><div>11</div><div>12</div>
+    </div>
+    <p>Kesimpulan: Flexbox sangat efektif untuk mengatur tata letak elemen secara otomatis dalam satu baris atau kolom.</p>
+</body>
+</html>
