@@ -1,0 +1,23 @@
+/* Gaya untuk semua elemen <p> */
+p {
+    color: #555;
+    font-family: Arial, sans-serif;
+    background: #00FF00;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+/* Gaya khusus untuk elemen dengan class="group" */
+p.group {
+    color: red;
+    font-family: Verdana, sans-serif;
+    font-size: 14pt;
+    font-weight: normal;
+    background: #0000FF;
+}
+
+/* Gaya sangat spesifik untuk elemen dengan id="one" */
+p#one {
+    color: #00FF00;
+    background: #FFFFFF;
+}
