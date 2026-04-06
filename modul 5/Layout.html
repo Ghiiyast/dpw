@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout CSS Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 200px auto 200px;
+            grid-gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container > div {
+            background-color: #e3f2fd;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+            border: 1px solid #1976D2;
+        }
+
+        .header {
+            grid-column: 1 / 4;
+        }
+
+        .menu {
+            grid-row: 2 / 3;
+        }
+
+    
+        .main {
+            grid-row: 2 / 3;
+        }
+
+        .right {
+            grid-row: 2 / 3;
+        }
+
+        .footer {
+            grid-column: 1 / 4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="main">Main</div>
+        <div class="right">Right</div>
+        <div class="footer">Footer</div>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <p><b>Kesimpulan Tugas 7:</b> CSS Grid sangat memudahkan pembuatan layout website yang kompleks karena kita bisa mengatur posisi elemen secara spesifik pada kolom dan baris tertentu menggunakan properti <code>grid-column</code>.</p>
+    </div>
+
+</body>
+</html>
