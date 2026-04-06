@@ -1,0 +1,54 @@
+<HTML>
+<HEAD>
+  <TITLE>Waktu Real-Time</TITLE>
+  <STYLE>
+    #clock-container {
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      color: #2c3e50;
+      padding: 20px;
+      border: 2px solid #34495e;
+      display: inline-block;
+      border-radius: 10px;
+    }
+  </STYLE>
+</HEAD>
+<BODY onload="updateTime()">
+  <h2>Waktu Saat Ini:</h2>
+  <div id="clock-container">
+    <span id="date"></span> <br>
+    <span id="clock"></span>
+  </div>
+
+  <SCRIPT LANGUAGE="JavaScript">
+    function updateTime() {
+      var now = new Date();
+      
+     
+      var days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+      var dayName = days[now.getDay()];
+      var date = now.getDate();
+      var month = now.getMonth() + 1; 
+      var year = now.getFullYear();
+      
+     
+      var hours = now.getHours();
+      var minutes = now.getMinutes();
+      var seconds = now.getSeconds();
+      
+      
+      hours = (hours < 10) ? "0" + hours : hours;
+      minutes = (minutes < 10) ? "0" + minutes : minutes;
+      seconds = (seconds < 10) ? "0" + seconds : seconds;
+      
+      
+      document.getElementById("date").innerHTML = dayName + ", " + date + "/" + month + "/" + year;
+      document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+      
+      
+      setTimeout(updateTime, 1000);
+    }
+  </SCRIPT>
+</BODY>
+</HTML>
