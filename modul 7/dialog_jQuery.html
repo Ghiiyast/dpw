@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+  <TITLE>Basic Dialog jQuery</TITLE>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</HEAD>
+<BODY>
+
+  <div id="dialog-ku" title="Pesan Penting">
+    <p>Halo Ghiyast! Ini adalah jendela Basic Dialog yang dibuat menggunakan jQuery UI.</p>
+  </div>
+
+  <button id="buka-dialog">Buka Jendela Dialog</button>
+
+  <script>
+    $(document).ready(function() {
+      $("#dialog-ku").dialog({
+        autoOpen: false, 
+        show: {
+          effect: "blind",
+          duration: 500
+        },
+        hide: {
+          effect: "explode",
+          duration: 500
+        }
+      });
+      $("#buka-dialog").on("click", function() {
+        $("#dialog-ku").dialog("open");
+      });
+    });
+  </script>
+
+</BODY>
+</HTML>
