@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran - Latihan 2.3</title>
+    <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='css/main.css'>
+    <style> </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>Judul/Header Website</h1>
+    </div>
+
+    <div id="main">
+        <div id="link">
+            <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Tokyo</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <fieldset>
+                <legend>Form Pendaftaran Mahasiswa Baru</legend>
+               <form action="proses.php" method="POST">
+    <table cellpadding="10">
+
+        <tr>
+            <td>Nama Lengkap</td>
+            <td><input type="text" name="nama_lengkap" size="30"></td>
+        </tr>
+
+        <tr>
+            <td>Tempat, Tanggal Lahir</td>
+            <td>
+                <input type="text" name="tempat_lahir">
+                <select name="tgl">
+                    <option>1</option>
+                </select>
+                <select name="bln">
+                    <option>1</option>
+                </select>
+                <select name="thn">
+                    <option>1989</option>
+                    <option>1990</option>
+                    <option>1991</option>
+                    <option>1992</option>
+                    <option>1993</option>
+                    <option>1994</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Agama</td>
+            <td>
+                <select name="agama">
+                    <option>-PILIH-</option>
+                    <option>Islam</option>
+                    <option>Kristen</option>
+                    <option>Katolik</option>
+                    <option>Hindu</option>
+                    <option>Budha</option>
+                    <option>Konghucu</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td>
+                <input type="radio" name="jk" value="L"> Laki-laki
+                <input type="radio" name="jk" value="P"> Perempuan
+            </td>
+        </tr>
+
+        <tr>
+            <td>Foto</td>
+            <td><input type="file" name="foto"></td>
+        </tr>
+
+        <tr>
+            <td>Nama Ayah</td>
+            <td><input type="text" name="nama_ayah" size="30"></td>
+        </tr>
+
+        <tr>
+            <td>Nama Ibu</td>
+            <td><input type="text" name="nama_ibu" size="30"></td>
+        </tr>
+
+        <tr>
+            <td>Alamat Rumah</td>
+            <td><textarea name="alamat" rows="5" cols="40"></textarea></td>
+        </tr>
+
+        <tr>
+            <td>No Telp</td>
+            <td><input type="text" name="no_telp" size="30"></td>
+        </tr>
+
+        <tr>
+            <td>Nama Sekolah Asal</td>
+            <td><textarea name="sekolah" rows="2" cols="30"></textarea></td>
+        </tr>
+
+        <tr>
+            <td>Alamat Sekolah Asal</td>
+            <td><textarea name="alamat_sekolah" rows="5" cols="40"></textarea></td>
+        </tr>
+
+        <tr>
+            <td>Jurusan Dipilih</td>
+            <td>
+                <select name="jurusan">
+                    <option>-PILIH-</option>
+                    <option value="TI">Teknologi Informasi</option>
+                    <option value="AK">Akuntansi</option>
+                    <option value="ABDIS">Administrasi Bisnis</option>
+                    <option value="TKK">Teknik Komputer Kontrol</option>
+                    <option value="TL">Teknik Listrik</option>
+                    <option value="TRO">Mesin Otomotif</option>
+                    <option value="PERKERETAAPIAN">Perkeretaapian</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Sumber Info</td>
+            <td>
+                <input type="checkbox" name="info[]" value="Koran"> Koran
+                <input type="checkbox" name="info[]" value="Website"> Website
+                <input type="checkbox" name="info[]" value="Televisi"> Televisi
+                <input type="checkbox" name="info[]" value="Radio"> Radio
+                <input type="checkbox" name="info[]" value="Teman"> Teman
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="DAFTAR">
+                <input type="reset" value="BATAL">
+            </td>
+        </tr>
+
+    </table>
+</form>
+</html>
