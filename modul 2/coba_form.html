@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tipe Input</title>
+    <link rel="icon" type="img/png" href="gender/icon.png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    
+    <label for="pwd">Password:</label><br>
+    <input type="password" id="pwd" name="pwd"><br>
+
+    <hr>
+    <h3>Uji coba 2 (Radio Button)</h3>
+    <p>Pilih Bahasa Pemrograman:</p>
+    <input type="radio" id="html" name="bahasa" value="HTML"> 
+    <label for="html">HTML</label><br>
+    
+    <input type="radio" id="css" name="bahasa" value="CSS"> 
+    <label for="css">CSS</label><br>
+    
+    <input type="radio" id="javascript" name="bahasa" value="JavaScript"> 
+    <label for="javascript">JavaScript</label>
+    
+    <p><b>Kesimpulan:</b> Jika atribut "name" bernilai sama, kita hanya bisa memilih satu opsi. Jika "name" berbeda, kita bisa memilih semuanya (yang mana itu salah untuk fungsi radio button).</p>
+
+    <hr>
+    <h3>Uji coba 3 (Checkbox)</h3>
+    <input type="checkbox" id="id1" name="kendaraan1" value="Bike">
+    <label for="id1"> I have a bike</label><br>
+    
+    <input type="checkbox" id="id2" name="kendaraan2" value="Car">
+    <label for="id2"> I have a car</label><br>
+    
+    <input type="checkbox" id="id3" name="kendaraan3" value="Boat">
+    <label for="id3"> I have a boat</label>
+    
+    <p><b>Kesimpulan:</b> Checkbox memungkinkan pengguna memilih lebih dari satu pilihan sekaligus.</p>
+
+    <hr>
+    <h3>Uji coba 4</h3>
+    <label for="favcolor">Pilih Warna:</label>
+    <input type="color" id="favcolor" name="favcolor"><br><br>
+    
+    <label for="tgl">Pilih Tanggal:</label>
+    <input type="date" id="tgl" name="tanggal"><br><br>
+    
+    <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+    
+    <p><b>Kesimpulan:</b> Type="color" membuka palet warna, type="date" memunculkan kalender, dan type="button" menjalankan perintah (seperti alert) saat diklik.</p>
+
+<hr>
+    <h3>Uji coba 6</h3>
+    <label>Input Image (sebagai tombol submit):</label><br>
+    <input type="image" src="gambar/icon.png" alt="Submit" width="48" height="48"><br><br>
+    
+    <label for="myfile">Pilih file untuk diunggah:</label><br>
+    <input type="file" id="myfile" name="myfile"><br><br>
+    
+    <input type="hidden" id="custId" name="custId" value="3487">
+    <p><i>(Catatan: Input "hidden" tidak akan terlihat di layar browser)</i></p>
+    
+    <p><b>Kesimpulan:</b> <code>type="image"</code> berfungsi sebagai tombol kirim berupa gambar. <code>type="file"</code> membuka jendela pencarian file di komputermu. <code>type="hidden"</code> digunakan untuk mengirim data rahasia/sistem yang tidak perlu dilihat user.</p>
+
+    <hr>
+    <h3>Uji coba 7</h3>
+    <label for="quantity">Jumlah (antara 1 sampai 10):</label><br>
+    <input type="number" id="quantity" name="quantity" min="1" max="10"><br><br>
+    
+    <label for="vol">Volume (0 sampai 50):</label><br>
+    <input type="range" id="vol" name="vol" min="0" max="50"><br>
+    
+    <p><b>Kesimpulan:</b> <code>type="number"</code> membatasi input hanya angka dengan batas <code>min</code> dan <code>max</code>. <code>type="range"</code> berbentuk slider geser yang lebih visual.</p>
+
+    <hr>
+    <h3>Uji coba 8</h3>
+    <label for="homepage">Alamat Website (URL):</label><br>
+    <input type="url" id="homepage" name="homepage" placeholder="https://google.com"><br><br>
+    
+    <label for="gsearch">Cari di Google:</label><br>
+    <input type="search" id="gsearch" name="gsearch"><br><br>
+    
+    <label for="ph">Nomor Telepon (Format: 000-00-000):</label><br>
+    <input type="tel" id="ph" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+    
+    <p><b>Kesimpulan:</b> Input ini memberikan validasi otomatis. Misalnya, <code>type="url"</code> akan mengecek apakah formatnya alamat web asli , dan <code>type="tel"</code> bisa menggunakan <code>pattern</code> untuk mengatur format angka yang benar.</p>
+
+    <hr>
+    <h3>Uji coba 9</h3>
+    <label for="appt">Pilih Jam:</label><br>
+    <input type="time" id="appt" name="appt"><br><br>
+    
+    <label for="week">Pilih Minggu ke-berapa:</label><br>
+    <input type="week" id="week" name="week"><br>
+    
+    <p><b>Kesimpulan:</b> <code>type="time"</code> memudahkan user memilih jam dan menit tanpa mengetik manual. <code>type="week"</code> digunakan untuk memilih spesifik minggu dalam setahun.</p>
+
+
+</body>
+</html>
