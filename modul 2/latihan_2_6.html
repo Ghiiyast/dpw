@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Div dan Span - Latihan 2.2</title>
+    <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='css/main.css'>
+</head>
+<body>
+
+    <div id="header">
+        <h1>Judul/Header Website</h1>
+    </div>
+
+    <div id="main">
+        
+        <div id="link">
+            <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Tokyo</a></li>
+            </ul>
+        </div>
+
+        <div id="content"> 
+            <h3>Uji Coba Peta Gambar (Image Map)</h3>
+            <p>Tag HTML <code>&lt;map&gt;</code> mendefinisikan peta gambar. Peta gambar adalah gambar dengan area yang dapat diklik].</p>
+            
+            <p>Coba klik pada bagian Laptop, Handphone, atau Kopi di gambar bawah ini:</p>
+
+            <img src="gambar/workplace.jpg" alt="Workplace" usemap="#petagambar">
+
+            <map name="petagambar">
+                <area shape="rect" coords="34,44,278,350" alt="Computer" href="https://en.wikipedia.org/wiki/Computer">
+                
+                <area shape="rect" coords="290,172,333,258" alt="Phone" href="https://en.wikipedia.org/wiki/Telephone">
+                
+                <area shape="circle" coords="337, 300, 44" alt="Coffee" href="https://en.wikipedia.org/wiki/Coffee">
+            </map>
+
+            <hr>
+            <p>
+                <b>Kesimpulan:</b> Area pada gambar ditentukan dengan satu atau lebih tag <code>&lt;area&gt;</code>. 
+                Setiap area memiliki koordinat (coords) yang menentukan batas wilayah yang bisa diklik. 
+                Atribut <code>shape</code> digunakan untuk menentukan bentuk area, seperti <code>rect</code> untuk persegi atau <code>circle</code> untuk lingkaran.
+            </p>
+
+            <p><b>Nama: Ghiyast Afif Ajuang Prakasa</b></p>
+            <p><b>NIM: 253307053</b></p>
+        </div>
