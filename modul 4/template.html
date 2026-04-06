@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Studi Kasus - Website CSS Saya</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .header {
+            background-color: #0000FF;
+            color: #FFFF00; 
+            padding: 20px;
+        }
+        .header p {
+            color: #FFFFFF; 
+            margin: 5px 0 0 0;
+        }
+
+        /* Container Utama */
+        .container {
+            display: flex;
+            min-height: 450px;
+        }
+
+
+        .sidebar {
+            width: 250px;
+            border: 2px dashed #888888;
+            margin: 20px;
+            padding: 15px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar li {
+            padding: 8px 0;
+            font-size: 18px;
+            color: #333;
+        }
+      
+        .menu-6 {
+            font-weight: bold;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+
+        .main-content {
+            flex: 1;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .logo-ti {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        .main-content h2 {
+            margin: 5px 0;
+            font-size: 32px;
+        }
+        .main-content h3 {
+            margin: 5px 0;
+            font-size: 24px;
+        }
+        .visi {
+            color: #CC0000;
+            max-width: 500px;
+            margin: 20px auto;
+            line-height: 1.5;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #ADD8E6;
+            padding: 10px 20px;
+            text-align: right;
+            font-size: 14px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Halo CSS !</h1>
+        <p>Ini adalah website CSS saya</p>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>Menu 1</li>
+                <li>Menu 2</li>
+                <li>Menu 3</li>
+                <li>Menu 4</li>
+                <li>Menu 5</li>
+                <li class="menu-6">Menu 6</li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Logo_Politeknik_Negeri_Madiun.png/200px-Logo_Politeknik_Negeri_Madiun.png" alt="Logo TI PNM" class="logo-ti">
+            <h2>TI</h2>
+            <h3>Politeknik Negeri Madiun</h3>
+            <p class="visi">
+                Mewujudkan pendidikan tinggi vokasi dalam bidang Teknologi Informasi dan penerapannya yang berkualitas, inovatif dan berdaya saing Nasional.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        Ghiyast Afif Ajuang Prakasa | 253307053 | TI-2B
+    </div>
+
+</body>
+</html>
