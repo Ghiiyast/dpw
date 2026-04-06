@@ -1,0 +1,19 @@
+/* Mengatur warna latar belakang seluruh halaman */
+body { 
+    background-color: #CCCCCC; 
+}
+
+/* Mengatur ukuran font untuk judul utama */
+h1 { 
+    font-size: 36pt; 
+}
+
+/* Mengatur warna teks untuk judul tingkat dua */
+h2 { 
+    color: blue; 
+}
+
+/* Mengatur jarak margin kiri untuk paragraf */
+p { 
+    margin-left: 50px; 
+}
