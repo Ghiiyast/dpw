@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Combinator Selector</title>
+    <style>
+
+        div p { color: red; }
+
+        div > p { background-color: yellow; }
+        
+        div + p { background-color: darkgray; }
+        div ~ p { color: cyan; }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Selektor No 1 & 2: Saya anak langsung DIV (Merah & Kuning).</p>
+        <span>
+            <p>Selektor No 1: Saya di dalam span (Hanya Merah).</p>
+        </span>
+    </div>
+    <p>Selektor No 3 & 4: Saya tepat setelah DIV (Abu-abu & Cyan).</p>
+    <p>Selektor No 4: Saya saudara DIV (Hanya Cyan).</p>
+</body>
+</html>
