@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktikum CSS - Border Style</title>
+    <style>
+        /* Mengatur berbagai gaya border untuk class pada paragraf */
+        p.dotted { border-style: dotted; }
+        p.dashed { border-style: dashed; }
+        p.solid { border-style: solid; }
+        p.double { border-style: double; }
+        p.groove { border-style: groove; }
+        p.ridge { border-style: ridge; }
+        p.inset { border-style: inset; }
+        p.outset { border-style: outset; }
+        p.none { border-style: none; }
+
+        /* Mengatur gaya border untuk elemen span */
+        span.ridge { border-style: ridge; }
+        span.inset { border-style: inset; }
+        span.dotted { border-style: dotted; }
+        span.outset { border-style: outset; }
+        
+        /* Tambahan agar tampilan lebih rapi dan jelas saat di-run */
+        p, span {
+            border-width: 5px;
+            margin: 10px 0;
+            padding: 10px;
+            display: block; 
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Macam-macam style border pada paragraf</h2>
+    <p class="dotted">A dotted border.</p>
+    <p class="dashed">A dashed border.</p>
+    <p class="solid">A solid border.</p>
+    <p class="double">A double border.</p>
+    <p class="groove">A groove border.</p>
+    <p class="none">No border.</p>
+
+    <h2>Macam-macam style border pada span</h2>
+    <span class="ridge">A ridge border (span).</span>
+    <span class="inset">An inset border (span).</span>
+    <span class="dotted">An dotted border (span).</span>
+    <span class="outset">An outset border (span).</span>
+</body>
+</html>
